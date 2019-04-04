@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace REPO_DBF_2019_
 {
@@ -54,6 +55,7 @@ namespace REPO_DBF_2019_
             }
         }
 
+        [Key]
         public int id
         {
             get { return _id; }

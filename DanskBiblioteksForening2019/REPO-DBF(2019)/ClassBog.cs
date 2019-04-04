@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,10 +56,6 @@ namespace REPO_DBF_2019_
         private Classudlaan _rentdate;
         private decimal _pris;
         #endregion
-        #region constructors
-
-
-        #endregion
         #region Properties
 
         public Classudlaan rentdate
@@ -73,6 +70,7 @@ namespace REPO_DBF_2019_
                 }
             }
         }
+        [Key]
         public int id
         {
             get { return _id; }
@@ -86,6 +84,7 @@ namespace REPO_DBF_2019_
                 }
             }
         }   
+
         public ClassISBN isbnNr
         {
             get { return _isbnNr; }
@@ -100,7 +99,6 @@ namespace REPO_DBF_2019_
             }
         }
 
-
         public ClassTitle titel
         {
             get { return _titel; }
@@ -114,9 +112,6 @@ namespace REPO_DBF_2019_
             }
         }
 
-
-
-
         public ClassAuthor forfatter
         {
             get { return _forfatter; }
@@ -129,8 +124,6 @@ namespace REPO_DBF_2019_
                 }
             }
         }
-
-
 
         public ClassPublisher forlag
         {

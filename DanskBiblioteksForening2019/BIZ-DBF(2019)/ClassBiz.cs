@@ -24,9 +24,9 @@ namespace BIZ_DBF_2019_
         private ClassBog _bog;
         private ObservableCollection<ClassISBN> _bookIsbns;
 
-        
 
 
+        ClassContext context;
         private ClassUser _user;
         ClassDbfDB classDbfDB;
 
@@ -40,7 +40,7 @@ namespace BIZ_DBF_2019_
             user = new ClassUser();
             MakeCollectionsForComboBoxes();
             //boeger = classDbfDB.GetAllBooks();
-
+            context = new ClassContext();
 
         }
 
